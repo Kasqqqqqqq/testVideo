@@ -301,7 +301,6 @@ public class MediaRecorderActivity extends Activity implements
                     break;
 
                 case MotionEvent.ACTION_UP:
-
                     mMediaRecorder.setRecordState(false);
                     if (mMediaObject.getDuration() <= RECORD_TIME_MAX && mMediaObject.getDuration() >= RECORD_TIME_MIN) {
                         mTitleNext.performClick();
